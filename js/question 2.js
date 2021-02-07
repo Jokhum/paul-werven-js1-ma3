@@ -18,9 +18,13 @@ async function getGames() {
             break;
         }
 
-        resultsContainer.innerHTML += `<div class="result"><ul>${facts[i].name} 
-                                       <li>Rating: ${facts[i].rating}</li>
-                                       <li>Number of tags: ${facts[i].tags.length}</li></ul></div>`;
+        resultsContainer.innerHTML += `<div class="result">
+                                         <h2>${facts[i].name}</h2> 
+                                         <ul>
+                                            <li>Rating: ${facts[i].rating}</li>
+                                            <li>Number of tags: ${facts[i].tags.length}</li>
+                                         </ul>
+                                       </div>`;
     }
 }
 
